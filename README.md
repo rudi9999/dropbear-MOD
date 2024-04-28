@@ -8,11 +8,11 @@ luego de la instalacion requiere activar dropbear
 
 comando activar
 
-sed -i 's/NO_START=1/NO_START=0/' /etc/default/dropbear
+`sed -i 's/NO_START=1/NO_START=0/' /etc/default/dropbear`
 
 comando desactivar
 
-sed -i 's/NO_START=0/NO_START=1/' /etc/default/dropbear
+```sed -i 's/NO_START=0/NO_START=1/' /etc/default/dropbear```
 
 comando modificar puerto, replaza el numero de puerto por el gustes
 
