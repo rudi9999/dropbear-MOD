@@ -7,3 +7,5 @@ wget --no-cache https://github.com/rudi9999/dropbear-MOD/raw/main/install; chmod
 ## unistall
 
 apt remove dropbear dropbear-bin -y; apt autoremove; apt autoclean
+
+fuente Original: https://matt.ucc.asn.au/dropbear/dropbear.html
