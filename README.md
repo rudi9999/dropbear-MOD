@@ -2,7 +2,7 @@
 
 ## install
 
-wget --no-cache https://github.com/rudi9999/dropbear-MOD/raw/main/install; chmod +x install; ./install
+`wget --no-cache https://github.com/rudi9999/dropbear-MOD/raw/main/install; chmod +x install; ./install`
 
 luego de la instalacion requiere activar dropbear
 
@@ -12,19 +12,19 @@ comando activar
 
 comando desactivar
 
-```sed -i 's/NO_START=0/NO_START=1/' /etc/default/dropbear```
+`sed -i 's/NO_START=0/NO_START=1/' /etc/default/dropbear`
 
 comando modificar puerto, replaza el numero de puerto por el gustes
 
-sed -i '/DROPBEAR_PORT/c\DROPBEAR_PORT=223' /etc/default/dropbear
+`sed -i '/DROPBEAR_PORT/c\DROPBEAR_PORT=223' /etc/default/dropbear`
 
 lugo de cada modificacion reinicion servicio
 
-service dropbear restart
+`service dropbear restart`
 
 ## unistall
 
-apt remove dropbear dropbear-bin -y; apt autoremove; apt autoclean
+`apt remove dropbear dropbear-bin -y; apt autoremove; apt autoclean`
 
 ## Fuente
 
