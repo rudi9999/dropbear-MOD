@@ -14,7 +14,7 @@ comando desactivar
 
 `sed -i 's/NO_START=0/NO_START=1/' /etc/default/dropbear`
 
-comando modificar puerto, replaza el numero de puerto por el gustes
+comando modificar puerto, replaza el numero de puerto por el que gustes
 
 `sed -i '/DROPBEAR_PORT/c\DROPBEAR_PORT=223' /etc/default/dropbear`
 
