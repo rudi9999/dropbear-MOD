@@ -22,6 +22,10 @@ lugo de cada modificacion reinicion servicio
 
 `service dropbear restart`
 
+si desean ver el estado del servicio, ya sea por fallo u otro
+
+`service dropbear status`
+
 ## unistall
 
 `apt remove dropbear dropbear-bin -y; apt autoremove; apt autoclean`
