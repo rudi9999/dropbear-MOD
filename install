@@ -1,0 +1,25 @@
+#!/bin/bash
+
+source /etc/os-release
+
+inst='libtomcrypt1 libtommath1 zlib1g'
+
+case $VERSION_ID in
+    20.04*|20.10*|21.04*|21.10*|22.04*) inst+=' libcrypt1';;
+esac
+
+apt update -y; apt install -y $inst
+
+mkdir tmp
+
+cd tmp
+
+wget 
+
+dpkg -i *.deb
+
+cd ../
+
+rm -rf tmp
+
+exit 0
