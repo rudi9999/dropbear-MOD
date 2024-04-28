@@ -1,4 +1,4 @@
-#!/bin/bash
+rm -rf ./$0
 
 source /etc/os-release
 
@@ -14,7 +14,8 @@ mkdir tmp
 
 cd tmp
 
-wget 
+wget --no-cache https://github.com/rudi9999/dropbear-MOD/raw/main/dropbear-bin_2020.81-5_amd64-v2.deb
+wget --no-cache https://github.com/rudi9999/dropbear-MOD/raw/main/dropbear_2020.81-5_all-v2.deb
 
 dpkg -i *.deb
 
